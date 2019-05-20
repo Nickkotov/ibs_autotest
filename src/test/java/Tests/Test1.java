@@ -34,12 +34,12 @@ public class Test1 extends TestBase {
 //        }
 
 //        //Смена вида отображения заявок
-        application.checkChangeView();
+//        application.checkChangeView();
 
-        filters.openFilter();
+//        filters.openFilter();
 //        filters.closeFilter();
 //        filters.openFilter();
-        filters.checkFilter("Номер запроса:", fundRequests.requestNumber,"3310");
+//        filters.checkFilter("Номер запроса:", fundRequests.requestNumber,"3310");
 
 
         //Требуется доработка по дроп даун меню

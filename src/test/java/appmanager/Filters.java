@@ -49,7 +49,7 @@ public class Filters {
     }
 
     //Проверка фильтра
-    public void checkFilter(String nameFilterField, String nameColumn,String valueFilter) {
+    public void checkFilter(String nameFilterField, String nameColumn, String valueFilter) {
         //Установка значения и применение фильтра
         $(byText(nameFilterField)).closest(".filterdd__filter").$("input.form__inp").setValue(valueFilter);
         $("#wrapper div.cardbox div.filterdd__wrapp").$(byText("Применить")).click();
