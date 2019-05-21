@@ -50,7 +50,7 @@
           <systemProperties>
             <property>
               <name>allure.results.directory</name>
-              <value>${project.build.directory}/allure-results</value>
+              <value>C:\Program Files (x86)\Jenkins\workspace\123\allure-results</value>
             </property>
           </systemProperties>
         </configuration>

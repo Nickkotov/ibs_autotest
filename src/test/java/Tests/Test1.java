@@ -24,6 +24,7 @@ public class Test1 extends TestBase {
 
         //Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
+        $("div.error").click();
 
 //        //Сортировка по полям
 //        ElementsCollection valuesColmnStart = fundRequests.getValueColumn();
