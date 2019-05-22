@@ -47,9 +47,8 @@ public class Test1 extends TestBase {
 //        filters.dropDownFilter("Тематика запроса:", "Другие вопросы");
 
 
-
-
         Thread.sleep(4000);
+        saveAllureScreenshot();
 
     }
 }

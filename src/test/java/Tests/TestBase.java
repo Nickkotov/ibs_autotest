@@ -8,8 +8,11 @@ import appmanager.Calendars;
 import appmanager.Filters;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.Attachment;
 import org.junit.After;
 import org.junit.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -43,6 +46,11 @@ public class TestBase {
     @After
     public void close() {
         webDriver.close();
+    }
+
+    @Attachment(value = "Page screenshot", type = "image/png")
+    protected byte[] saveAllureScreenshot() {
+        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
     }
 
 
