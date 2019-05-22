@@ -51,12 +51,6 @@ public class TestBase {
         SelenideLogger.removeListener("allure");
     }
 
-//    @Attachment(value = "Page screenshot", type = "image/png")
-//    protected byte[] saveAllureScreenshot() {
-//        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
-//    }
-
-
     public void chrome() {
         System.setProperty("webdriver.chrome.driver","C:\\Projects\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();

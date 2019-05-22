@@ -25,7 +25,7 @@ public class Test1 extends TestBase {
         ///Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
         filters.openFilter();
-        $("div.error").click();
+//        $("div.error").click();
 
 //        //Сортировка по полям
 //        ElementsCollection valuesColmnStart = fundRequests.getValueColumn();
@@ -49,7 +49,5 @@ public class Test1 extends TestBase {
 
 
         Thread.sleep(4000);
-//        saveAllureScreenshot();
-
     }
 }
