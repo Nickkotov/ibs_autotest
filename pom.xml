@@ -31,7 +31,13 @@
       <artifactId>allure-junit4</artifactId>
       <version>${allure-junit4.version}</version>
     </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-selenide</artifactId>
+      <version>$LATEST_VERSION</version>
+    </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>

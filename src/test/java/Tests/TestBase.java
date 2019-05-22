@@ -48,10 +48,10 @@ public class TestBase {
         webDriver.close();
     }
 
-    @Attachment(value = "Page screenshot", type = "image/png")
-    protected byte[] saveAllureScreenshot() {
-        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
-    }
+//    @Attachment(value = "Page screenshot", type = "image/png")
+//    protected byte[] saveAllureScreenshot() {
+//        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+//    }
 
 
     public void chrome() {
