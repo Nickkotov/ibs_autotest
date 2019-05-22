@@ -22,7 +22,7 @@ public class Test1 extends TestBase {
         authorization.loginInsuredAccount();
         Thread.sleep(4000);
 
-        //Открытие плашки "Запросы в фонд"
+        ///Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
 //        $("div.error").click();
 
