@@ -24,6 +24,7 @@ public class Test1 extends TestBase {
 
         ///Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
+        filters.openFilter();
         $("div.error").click();
 
 //        //Сортировка по полям
@@ -37,7 +38,7 @@ public class Test1 extends TestBase {
 //        //Смена вида отображения заявок
 //        application.checkChangeView();
 
-//        filters.openFilter();
+
 //        filters.closeFilter();
 //        filters.openFilter();
 //        filters.checkFilter("Номер запроса:", fundRequests.requestNumber,"3310");
