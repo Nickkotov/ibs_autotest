@@ -24,7 +24,7 @@ public class Test1 extends TestBase {
 
         ///Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
-        filters.openFilter();
+
 //        $("div.error").click();
 
 //        //Сортировка по полям
@@ -35,13 +35,13 @@ public class Test1 extends TestBase {
 //            error("ошибка");
 //        }
 
-//        //Смена вида отображения заявок
-//        application.checkChangeView();
+        //Смена вида отображения заявок
+        application.checkChangeView();
 
-
-//        filters.closeFilter();
-//        filters.openFilter();
-//        filters.checkFilter("Номер запроса:", fundRequests.requestNumber,"3310");
+        filters.openFilter();
+        filters.closeFilter();
+        filters.openFilter();
+        filters.checkFilter("Номер запроса:", fundRequests.requestNumber,"3310");
 
 
         //Требуется доработка по дроп даун меню

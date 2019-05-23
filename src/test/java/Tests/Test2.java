@@ -15,7 +15,7 @@ public class Test2 extends TestBase{
         ///Открытие плашки "Запросы в фонд"
         homePageInsured.findCard(homePageInsured.requestsFund).click();
         filters.openFilter();
-        $("div.error").click();
+
 
         Thread.sleep(4000);
     }
