@@ -17,6 +17,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 import static com.codeborne.selenide.Selenide.open;
@@ -56,6 +57,13 @@ public class TestBase {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         webDriver = new ChromeDriver(options);
+        WebDriverRunner.setWebDriver(webDriver);
+    }
+
+    public void firefox() {
+        System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+        webDriver = new FirefoxDriver();
+        webDriver.manage().window().maximize();
         WebDriverRunner.setWebDriver(webDriver);
     }
 
